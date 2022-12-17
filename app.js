@@ -1,13 +1,13 @@
 let text = "mehul";
 let age = 22;
 let hobbies = ["sport", "painting", "chess"];
-alert(text);
-alert(age);
-alert(hobbies[1]);
+console.log(text);
+console.log(age);
+console.log(hobbies[1]);
 
 let job = {title:"developer",place:"india",salary:65000};
-alert(job.place);
-alert(job.salary);
+console.log(job.place);
+console.log(job.salary);
 
 
 let adultYear;
@@ -16,4 +16,13 @@ function calculateAdultYears(userAge){
 }
 
 adultYear=calculateAdultYears(age);
-alert(adultYear);
+console.log(adultYear);
+
+let person={
+    name:'mehul', //property
+    greet(){      //method
+        console.log('hello');
+    }
+};
+
+person.greet();
