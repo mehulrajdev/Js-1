@@ -6,7 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Intro</title>
   </head>
+  <link href="style.css" rel="stylesheet" type="text/css">
   <script src="app.js"></script>
-  <body></body>
+  <body>
+
+
+    <div style="position: fixed; z-index: 9999;" class="container navbar__container">
+        <nav class="navbar__flex">
+          <div class="navbar__left">
+            <span class="navbar__hamburger"></span>
+            <form class="navbar__search">
+              <div class="navbar__inputwithicon">
+                <input type="text" name="" class="navbar__input" placeholder="Search...">
+                <input type="submit" name="" class="navbar__button" value="">
+              </div>
+            </form>
+          </div>
+          <div class="navbar__right">
+            <label for="navbarToggler" class="navbar__toggler__label">
+            <span class="navbar__hamberger"></span>
+            <span>Menu</span></label>
+            <input type="checkbox" name="" class="navbar__toggler__input" id="navbarToggler">
+            <ul class="navbar__links">
+              <li><a href="#">HOME</a></li>
+               <li><a href="#">MY RESULT</a></li>
+              <li><a href="#">PROFILE</a>
+                <ul class="navbar__sublinks">
+                  <li><a href="#">Logout</a></li>   <li><a href="#">Edit</a></li>
+                </ul>
+              </li>
+              <li><a href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </body>
 </html>
 

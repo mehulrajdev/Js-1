@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    background-color: #e7e7e7;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .navbar__container {
+    display: block;
+    background-color: #3f3f4d;
+    padding: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  }
+  .navbar__flex {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .navbar__left, .navbar__right {
+    -webkit-box-flex: 1;
+            flex: 1 1 50%;
+  }
+  .navbar__hamburger {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: #3f3f4d url(https://photos.angel.co/startups/i/7570607-c091f128c89162c8e32e55ba54a17a73-medium_jpg.jpg?buster=1584640398) no-repeat;
+    background-size: contain;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+  .navbar__search {
+    display: inline-block;
+  }
+  .navbar__inputwithicon {
+    position: relative;
+    width: 300px;
+  }
+  .navbar__input {
+    background-color: #34343f;
+    border: 1px solid #34343f;
+    width: 100%;
+    height: 36px;
+    border-radius: 18px;
+    outline: none;
+    padding: 0 30px 0 15px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #c0c7da;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+  }
+  .navbar__input:focus {
+    border-color: white;
+  }
+  .navbar__button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: #43cb83 url("https://res.cloudinary.com/ajayrawat/image/upload/v1508734484/search_icon_pr2sma.svg") no-repeat;
+    background-size: 17px;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    will-change: background-color;
+  }
+  .navbar__button:hover, .navbar__button:focus {
+    background-color: #32b46f;
+  }
+  .navbar__button:active {
+    background-color: #2fac6a;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  .navbar__toggler {
+    display: none;
+  }
+  .navbar__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+  }
+  .navbar__links li {
+    position: relative;
+    display: inline-block;
+  }
+  .navbar__links li:not(:last-child) a {
+    padding: 0 15px;
+  }
+  .navbar__links li:last-child a {
+    padding: 0 0 0 15px;
+  }
+  .navbar__links li a {
+    display: block;
+    color: #c0c7da;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+    -webkit-transition: color 200ms linear;
+    transition: color 200ms linear;
+    will-change: color;
+  }
+  .navbar__links li a:hover, .navbar__links li a:hover {
+    color: white;
+  }
+  .navbar__hamberger {
+    /*display: none;*/
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+  }
+  .navbar__toggler__label {
+    display: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+  }
+  .navbar__toggler__input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .navbar__sublinks {
+    display: none;
+    position: absolute;
+    width: 175px;
+    height: auto;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #3f3f4d;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .navbar__sublinks li {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+  }
+  .navbar__sublinks li:first-child {
+    margin-top: 20px;
+  }
+  .navbar__sublinks li a {
+    display: block;
+    padding: 5px 15px 15px !important;
+  }
+  .navbar__links li:hover .navbar__sublinks {
+    display: block;
+  }
+  
