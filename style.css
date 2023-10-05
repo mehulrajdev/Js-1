@@ -33,6 +33,7 @@
     -webkit-box-align: center;
             align-items: center;
   }
+
   .navbar__left, .navbar__right {
     -webkit-box-flex: 1;
             flex: 1 1 50%;
@@ -43,7 +44,7 @@
     height: 50px;
     background: #3f3f4d url(https://photos.angel.co/startups/i/7570607-c091f128c89162c8e32e55ba54a17a73-medium_jpg.jpg?buster=1584640398) no-repeat;
     background-size: contain;
-    margin-right: 15px;
+    margin-right: 16px;
     vertical-align: middle;
   }
   .navbar__search {
